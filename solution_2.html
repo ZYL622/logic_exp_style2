@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exp2_Solution</title>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <!--Make the math equations to show-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="index.html">Self-learning Module - Logic</a>
+        </li>
+        <li class="item"><a href="home_2.html">Home</a></li>
+        <li class="item"><a href="usage.html">Usage</a></li>
+        <li class="item"><a href="hint_2.html">Hints</a></li>
+        <!-- <li class="item"><a href="#">Services</a></li> -->
+        <!-- <li class="item button"><a href="#">Log In</a></li> -->
+        <li class="item_on">
+          <a href="solution_2.html">Full Solution</a>
+        </li>
+        <!-- <li class="toggle"><span class="bars"></span></li> -->
+      </ul>
+    </nav>
+
+    <p>
+      \[ \begin{array}{ll} 1.\big|&X \vee Y& ~\textup{given}\\ \hline 2.\big|&Y
+      \rightarrow Z& ~\textup{given}\\ \hline &\\
+      &{\left[\mbox{$\begin{array}{rcl} 3a. \big|& X ~&\textup{assume}\\ \hline
+      3b.\big|&X \vee Z ~&I_{\vee}(3a)\\ \end{array}$ } \right]~~} {\left[
+      \mbox{$\begin{array}{rcl} 4a.\big|& Y ~&\textup{assume} \\ \hline
+      4b.\big|& Z ~&E_{\rightarrow}(2,4a) \\ \hline 4c. \big|&X \vee Z
+      ~&I_{\vee}(4b)\\ \end{array}$} \right]\\} &\\ \\ \hline 5. \big| |&X \vee
+      Z & E_{\vee}(1,3a-3b,4a-4c)\\ \end{array} \]
+    </p>
+
+    <script src="assets/js/index.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exp2_Hint</title>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <!--Make the math equations to show-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="index.html">Self-learning Module - Logic</a>
+        </li>
+        <li class="item"><a href="home_2.html">Home</a></li>
+        <li class="item"><a href="usage.html">Usage</a></li>
+        <li class="item_on"><a href="hint_2.html">Hints</a></li>
+        <!-- <li class="item"><a href="#">Services</a></li> -->
+        <!-- <li class="item button"><a href="#">Log In</a></li> -->
+        <li class="item button secondary">
+          <a href="solution_2.html">Full Solution</a>
+        </li>
+        <!-- <li class="toggle"><span class="bars"></span></li> -->
+      </ul>
+    </nav>
+
+    <em>
+      <li>
+        Totally no idea about the starting?
+        <button id="but_1_1" class="shbt" onclick="hint_show(1)">Hint</button>
+        <button id="but_1_2" class="shbt" onclick="check_show(1)">Check</button>
+      </li>
+    </em>
+
+    <div class="plain_container" id="1">
+      <div id="hint_1" class="unsee_child">
+        <em>
+          <!--Hint 1-->
+          First, you can set up a framework, which includes the given
+          information and the final derivation.
+        </em>
+      </div>
+
+      <div id="check_1" class="unsee_child">
+        <p>
+          <!--check 1-->
+          \[ \begin{array}{ll} 1.\big|&X \vee Y& ~\textup{given}\\ \hline
+          2.\big|&Y \rightarrow Z& ~\textup{given}\\ \hline &\\ &{...} &\\ \\
+          \hline ~~\big|&X \vee Z & \textup{...} \\ \end{array} \]
+        </p>
+      </div>
+    </div>
+
+    <br />
+
+    <em>
+      <li>
+        Get stucked after writing down the initial framework?
+        <button id="but_2_1" class="shbt" onclick="hint_show(2)">Hint</button>
+        <button id="but_2_2" class="shbt" onclick="check_show(2)">Check</button>
+      </li>
+    </em>
+
+    <div class="plain_container" id="2">
+      <div id="hint_2" class="unsee_child">
+        <em>
+          <!--Hint 2-->
+          Read the OR rule, and try to apply it based on the framework you have.
+        </em>
+      </div>
+
+      <div id="check_2" class="unsee_child">
+        <!-- check 2  -->
+        <p>
+          \[ \begin{array}{ll} 1.\big|&X \vee Y& ~\textup{given}\\ \hline
+          2.\big|&Y \rightarrow Z& ~\textup{given}\\ \hline &\\
+          &{\left[\mbox{$\begin{array}{rcl} 3a. \big|&X ~&\textup{...}\\ \hline
+          &\textup{...} \\ \end{array}$ } \right]~~} {\left[
+          \mbox{$\begin{array}{rcl} 4a.\big|&Y ~&\textup{...} \\ \hline
+          \textup{...} \\ \end{array}$} \right]\\} &\\ \\ \hline 5. \big|&X \vee
+          Z & \textup{...} \\ \end{array} \]
+        </p>
+      </div>
+    </div>
+
+    <br />
+
+    <em>
+      <li>
+        Known that OR rule should be applied, but lost your goal when using OR
+        rule?
+        <button id="but_3_1" class="shbt" onclick="hint_show(3)">Hint</button>
+        <button id="but_3_2" class="shbt" onclick="check_show(3)">Check</button>
+      </li>
+    </em>
+
+    <div class="plain_container" id="3">
+      <div id="hint_3" class="unsee_child">
+        <em>
+          <!--Hint 3-->
+          After applying the OR rule, it's crucial to ensure that the outcome
+          aligns with your ultimate objective, especially for less complex
+          problems.
+          <br />
+          However, in more intricate scenarios, the derivation of the OR rule
+          may serve as an intermediate objective, acting as a bridge toward
+          achieving the final goal.
+        </em>
+      </div>
+
+      <div id="check_3" class="unsee_child">
+        <!-- check 3  -->
+        <p>
+          \[ \begin{array}{ll} 1.\big|&X \vee Y& ~\textup{given}\\ \hline
+          2.\big|&Y \rightarrow Z& ~\textup{given}\\ \hline &\\
+          &{\left[\mbox{$\begin{array}{rcl} 3a. \big|&X ~&\textup{...}\\ \hline
+          ~~&\textup{...} \\ \hline ~~&X \vee Z&\textup{...} \\ \end{array}$ }
+          \right]~~} {\left[ \mbox{$\begin{array}{rcl} 4a.\big|&Y ~&\textup{...}
+          \\ \hline ~~&\textup{...} \\ \hline ~~&X \vee Z &\textup{...} \\
+          \end{array}$} \right]\\} &\\ \\ \hline 5. \big|&X \vee Z &
+          \textup{...} \\ \end{array} \]
+        </p>
+      </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script> -->
+  </body>
+</html>

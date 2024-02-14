@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--Make the math equations to show-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+
+    <title>Responsive card slider - Bedimcode</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li class="logo_on">
+          <a href="index.html">Self-learning Module - Logic</a>
+        </li>
+        <!-- <li class="item_on"><a href="home_1.html">Home</a></li> -->
+        <li class="item"><a href="usage.html">Usage</a></li>
+        <!-- <li class="item"><a href="hint_1.html">Hints</a></li> -->
+        <!-- <li class="item"><a href="#">Services</a></li> -->
+        <!-- <li class="item button"><a href="#">Log In</a></li> -->
+        <!-- <li class="item button secondary">
+          <a href="solution_1.html">Full Solution</a>
+        </li> -->
+        <!-- <li class="toggle"><span class="bars"></span></li> -->
+      </ul>
+    </nav>
+
+    <section class="container">
+      <div class="card__container swiper">
+        <div class="card__content">
+          <div class="swiper-wrapper">
+            <article class="card__article swiper-slide">
+              <!-- <div class="card__image"> -->
+              <!-- <img src="assets/img/avatar-1.png" alt="image" class="card__img"> -->
+              <!-- <div class="card__shadow"></div> -->
+              <!-- </div> -->
+
+              <div class="card__data">
+                <h3 class="card__name">Example 1</h3>
+                <p class="card__description">
+                  Given $X$, $Y$, and $X \rightarrow (Y \rightarrow Z)$ <br />
+                  Derive $Z$
+                </p>
+
+                <a href="home_1.html" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <!-- <div class="card__image">
+                <img
+                  src="assets/img/avatar-2.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+              </div> -->
+
+              <div class="card__data">
+                <h3 class="card__name">Example 2</h3>
+                <p class="card__description">
+                  Given $X \vee Y$, $Y \rightarrow Z$ <br />
+                  Derive $X \vee Z$
+                </p>
+
+                <a href="home_2.html" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <!-- <div class="card__image">
+                <img
+                  src="assets/img/avatar-3.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+              </div> -->
+
+              <div class="card__data">
+                <h3 class="card__name">Example 3</h3>
+                <p class="card__description">
+                  Given $A \rightarrow (C \rightarrow B)$, $C$ <br />
+                  Derive $A \rightarrow B$
+                </p>
+
+                <a href="home_3.html" class="card__button">View More</a>
+              </div>
+            </article>
+
+            <!-- <article class="card__article swiper-slide"> -->
+            <!-- <div class="card__image">
+                <img
+                  src="assets/img/avatar-4.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+              </div> -->
+
+            <!-- <div class="card__data">
+                <h3 class="card__name">Example 4</h3>
+                <p class="card__description">
+                  Example 4
+                </p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article> -->
+
+            <!-- <article class="card__article swiper-slide"> -->
+            <!-- <div class="card__image">
+                <img
+                  src="assets/img/avatar-5.png"
+                  alt="image"
+                  class="card__img"
+                />
+                <div class="card__shadow"></div>
+              </div> -->
+
+            <!-- <div class="card__data">
+                <h3 class="card__name">Example 5</h3>
+                <p class="card__description">Example 5</p>
+
+                <a href="#" class="card__button">View More</a>
+              </div>
+            </article> -->
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+
+        <div class="swiper-button-prev">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
